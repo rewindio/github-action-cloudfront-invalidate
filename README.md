@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@master
 
     - name: Invalidate Cloudfront
-      uses: rewindio/github-action-cloudfront-invalidate@master
+      uses: docker://rewindio/github-action-cloudfront-invalidate
       env:
         DISTRIBUTION_ID: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
         PATH_TO_INVALIDATE: /myfolder/myfile.png
