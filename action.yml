@@ -1,0 +1,9 @@
+name: "Cloudfront Invalidate"
+description: "Invalidate a path in AWS Cloudfront"
+author: dnorth98
+runs:
+  using: docker
+  image: Dockerfile
+branding:
+  icon: cloud-off
+  color: purple
